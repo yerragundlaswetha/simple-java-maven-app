@@ -32,6 +32,21 @@
           </archive>
         </configuration>
       </plugin>
+      <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-deploy-plugin</artifactId>
+             <version>2.8.2</version>
+       </plugin>
+       <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://ec2-13-126-54-38.ap-south-1.compute.amazonaws.com:8081/repository/nexus-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
